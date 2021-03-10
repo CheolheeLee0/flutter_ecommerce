@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_chat/constraints.dart';
 import 'package:flutter_chat/models/Product.dart';
+import 'package:flutter_chat/screens/details/components/add_to_cart.dart';
 import 'package:flutter_chat/screens/details/components/card_counter.dart';
 import 'package:flutter_chat/screens/details/components/color_and_size.dart';
 import 'package:flutter_chat/screens/details/components/counter_with_fav_btn.dart';
@@ -44,6 +45,7 @@ class Body extends StatelessWidget {
                       ColorAndSize(product: product),
                       Description(product: product),
                       CounterWithFavBtn(),
+                      AddToCart(product: product),
                     ],
                   ),
                 ),
