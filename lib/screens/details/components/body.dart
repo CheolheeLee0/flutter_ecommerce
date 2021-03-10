@@ -4,8 +4,10 @@ import 'package:flutter_chat/constraints.dart';
 import 'package:flutter_chat/models/Product.dart';
 import 'package:flutter_chat/screens/details/components/card_counter.dart';
 import 'package:flutter_chat/screens/details/components/color_and_size.dart';
+import 'package:flutter_chat/screens/details/components/counter_with_fav_btn.dart';
 import 'package:flutter_chat/screens/details/components/description.dart';
 import 'package:flutter_chat/screens/details/components/product_title_with_image.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class Body extends StatelessWidget {
   final Product product;
@@ -41,7 +43,7 @@ class Body extends StatelessWidget {
                     children: [
                       ColorAndSize(product: product),
                       Description(product: product),
-                      CardCounter(),
+                      CounterWithFavBtn(),
                     ],
                   ),
                 ),
