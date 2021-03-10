@@ -2,7 +2,9 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_chat/constraints.dart';
 import 'package:flutter_chat/models/Product.dart';
+import 'package:flutter_chat/screens/details/components/card_counter.dart';
 import 'package:flutter_chat/screens/details/components/color_and_size.dart';
+import 'package:flutter_chat/screens/details/components/description.dart';
 import 'package:flutter_chat/screens/details/components/product_title_with_image.dart';
 
 class Body extends StatelessWidget {
@@ -38,17 +40,8 @@ class Body extends StatelessWidget {
                   child: Column(
                     children: [
                       ColorAndSize(product: product),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(
-                          vertical: kDefaultPadding,
-                        ),
-                        child: Text(
-                          product.description,
-                          style: TextStyle(
-                            height: 1.5,
-                          ),
-                        ),
-                      ),
+                      Description(product: product),
+                      CardCounter(),
                     ],
                   ),
                 ),
